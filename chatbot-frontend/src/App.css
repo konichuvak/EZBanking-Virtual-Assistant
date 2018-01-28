@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  display: inline-block;
+}
+
+.App {
+  background-color: #F2EFF4;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+}
+
+
+.about .open {
+  padding: 10px 100px;
+  border-radius: 12px;
+  border: 2px solid #FFF;
+  background: #4B286D;
+  color: #FFF;
+  font-size: 18px;
+}
+
+.about .open:hover {
+  padding: 10px 100px;
+  border-radius: 12px;
+  border: 2px solid #FFF;
+  background: #66CC00;
+  color: #FFF;
+  font-size: 18px;
+}
+
+.buttonwrapper {
+  text-align: center;
+}
+
+.buttonwrapper .close {
+  padding: 10px 50px;
+  border: 1px solid #72BC4C;
+  background: #66CC00;
+  color: #FFF;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.buttonwrapper .close:hover {
+  padding: 10px 50px;
+  border: 1px solid #72BC4C;
+  background: #248700;
+  color: #FFF;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+
+.chatroom {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3);
+}
+
+.chatroom h3 {
+  font-family:'Roboto', sans-serif;
+  background-color: #ffa500; 
+  color: #FFF;
+  margin: 0;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.chatroom .chats {
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 10px 0 0;
+  /*height: 510px;*/
+  overflow-y: scroll;
+}
+
+.chatroom .chats .chat {
+  background: #F2EFF4;
+  position: relative;
+  padding: 5px 13px;
+  font-size: 14px;
+  border-radius: 10px;
+  list-style: none;
+  float: left;
+  clear: both;
+  margin: 10px 0;
+  max-width: 350px;
+}
+
+.chatroom .chats .chat img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+
+.chatroom .chats .chat.right {
+  float: right;
+  clear: both;
+  background: #ffa500;
+  color: #FFF;
+
+}
+
+.chatroom .chats .chat a {
+  text-decoration: none;
+  color:#3498DB;
+}
+
+.chatroom .userInput {
+  min-height: 40px;
+  width: 100%;
+  background: #ffa500; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.chatroom .userInput .mic input[type="submit"]{
+  background: transparent;
+  border: 1px solid #e59400;
+  color: #FFF;
+  height: 30px;
+  width: 95%;
+  font-size: 14px;
+  margin-left: 0px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chatroom .userInput .mic input[type="submit"]:hover {
+  background: #cc8400;
+  color: #FFF;
+}
+
+.chatroom .userInput .input {
+  max-height: 38px;
+  width: 100%;
+  background: #ffa500; 
+  display: flex;
+  flex-direction: row;
+}
+
+.chatroom .userInput .input input[type="text"] {
+  background: rgba(255, 255, 255, 0.5); 
+  outline: 0;
+  border: 2px solid #e59400; 
+  padding: 0 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 10px;
+  min-height: 30px;
+  width: 80%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.chatroom .userInput .input input[type="submit"] {
+  background: transparent;
+  border: 1px solid #e59400;
+  color: #FFF;
+  height: 30px;
+  width: 17%;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 0px;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chatroom .input input[type="submit"]:hover {
+  background: #cc8400;
+  color: #FFF;
+}
+
+a {
+    color: #72BC4C !important;
+    font-weight: 600 !important;
+}
+
+.responseButtons {
+  width:100%;
+  text-align: center;
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-around;
+}
+
+.responseButtons .responseButton {
+  display: inline-block;
+  margin: 3px;
+  height: 38px;
+  width: 20%;
+  /*padding: 8px 50px;*/
+  border: 3px solid #4B286D;
+  background: transparent;
+  color: #4B286D;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.responseButtons .responseButton:hover {
+  border: 3px solid #72BC4C;
+  background: transparent;
+  color: #72BC4C;
+}
+
